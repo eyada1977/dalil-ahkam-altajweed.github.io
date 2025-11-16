@@ -44,9 +44,20 @@
             margin-bottom: 25px;
         }
 
-        .download-box {
-            margin: 18px 0 25px;
-            text-align: center;
+        /* 🔽 تعديل زر تحميل PDF */
+        .download-btn.pdf {
+            background: #8c6b4c !important;
+        }
+
+        /* 🔽 تكبير وتغميق أزرار تحميل الفيديوهات والصوتيات */
+        .download-btn.full-download {
+            font-size: 17px;
+            font-weight: 800;
+            background: #0a5a32;
+        }
+
+        .download-btn.full-download:hover {
+            background: #084a29;
         }
 
         .download-btn {
@@ -58,19 +69,15 @@
             font-weight: 700;
             border: none;
             border-radius: 10px;
+            background: #0d7a3e;
             color: white;
             cursor: pointer;
             text-decoration: none;
             transition: 0.3s;
         }
 
-        /* 🎨 تم تغيير لون زر تحميل الكتاب فقط */
-        .pdf-btn {
-            background: #e8a6a6; /* وردي فاتح */
-        }
-
         .download-btn:hover {
-            opacity: 0.85;
+            background: #075e30;
         }
 
         .section-title {
@@ -144,9 +151,7 @@
 
     <!-- أزرار التحميل -->
     <div class="download-box">
-        <a href="#" class="download-btn pdf-btn">📥 تحميل الكتاب PDF</a>
-        <a href="#" class="download-btn">🎬 تحميل جميع الفيديوهات كملف واحد</a>
-        <a href="#" class="download-btn">🎧 تحميل جميع الصوتيات كملف واحد</a>
+        <a href="#" class="download-btn pdf">📥 تحميل الكتاب PDF</a>
     </div>
 
     <!-- المحتوى المرئي -->
@@ -154,7 +159,6 @@
     <div class="items-wrapper">
 
         <div class="item"><span class="text">المقدّمة</span><span class="soon-badge">⏳ قريبًا</span></div>
-
         <div class="item"><span class="text">مشاهدة الدرس (1): القرآنُ الكريمُ وعِلمُ التَّجويدِ</span><span class="soon-badge">⏳ قريبًا</span></div>
         <div class="item"><span class="text">مشاهدة الدرس (2): الاستِعاذةُ والبسْملةُ</span><span class="soon-badge">⏳ قريبًا</span></div>
         <div class="item"><span class="text">مشاهدة الدرس (3): أحكامُ النُّونِ السَّاكنةِ والتَّنوينِ</span><span class="soon-badge">⏳ قريبًا</span></div>
@@ -181,14 +185,15 @@
         <div class="item"><span class="text">مشاهدة الدرس (24): لَطائفُ قُرآنيَّةٌ</span><span class="soon-badge">⏳ قريبًا</span></div>
         <div class="item"><span class="text">مشاهدة الدرس (25): ثَمَراتٌ مُتَّصِلةٌ</span><span class="soon-badge">⏳ قريبًا</span></div>
 
+        <!-- زر تحميل كامل للفيديوهات -->
+        <a href="#" class="download-btn full-download">🎬 تحميل جميع الفيديوهات كملف واحد</a>
     </div>
 
     <!-- المحتوى الصوتي -->
-    <div class="section-title">🎧 المحتوى الصوتي (التسجيلات)</div>
+    <div class="section-title" style="background:#0d3a7a;">🎧 المحتوى الصوتي (التسجيلات)</div>
     <div class="items-wrapper">
         
         <div class="item audio"><span class="text">المقدّمة</span><span class="soon-badge">⏳ قريبًا</span></div>
-
         <div class="item audio"><span class="text">استماع الدرس (1): القرآنُ الكريمُ وعِلمُ التَّجويدِ</span><span class="soon-badge">⏳ قريبًا</span></div>
         <div class="item audio"><span class="text">استماع الدرس (2): الاستِعاذةُ والبسْملةُ</span><span class="soon-badge">⏳ قريبًا</span></div>
         <div class="item audio"><span class="text">استماع الدرس (3): أحكامُ النُّونِ السَّاكنةِ والتَّنوينِ</span><span class="soon-badge">⏳ قريبًا</span></div>
@@ -199,22 +204,9 @@
         <div class="item audio"><span class="text">استماع الدرس (8): صِفاتُ الحُرُوفِ</span><span class="soon-badge">⏳ قريبًا</span></div>
         <div class="item audio"><span class="text">استماع الدرس (9): الـ التَّعريفِ الشَّمسيَّةُ والقمريَّةُ</span><span class="soon-badge">⏳ قريبًا</span></div>
         <div class="item audio"><span class="text">استماع الدرس (10): اللَّاماتُ السَّواكنُ</span><span class="soon-badge">⏳ قريبًا</span></div>
-        <div class="item audio"><span class="text">استماع الدرس (11): إدغامُ المُتماثِلَينِ والمُتجانسَينِ والمُتقاربَينِ</span><span class="soon-badge">⏳ قريبًا</span></div>
-        <div class="item audio"><span class="text">استماع الدرس (12): الحُرُوفُ المُقطَّعةِ</span><span class="soon-badge">⏳ قريبًا</span></div>
-        <div class="item audio"><span class="text">استماع الدرس (13): الألِفاتُ السَّبعةُ</span><span class="soon-badge">⏳ قريبًا</span></div>
-        <div class="item audio"><span class="text">استماع الدرس (14): التَّفخيمُ والتَّرقيق</span><span class="soon-badge">⏳ قريبًا</span></div>
-        <div class="item audio"><span class="text">استماع الدرس (15): الوَقْفُ والابتداءُ</span><span class="soon-badge">⏳ قريبًا</span></div>
-        <div class="item audio"><span class="text">استماع الدرس (16): السَّكْتُ</span><span class="soon-badge">⏳ قريبًا</span></div>
-        <div class="item audio"><span class="text">استماع الدرس (17): الرَّومُ والإشمامُ</span><span class="soon-badge">⏳ قريبًا</span></div>
-        <div class="item audio"><span class="text">استماع الدرس (18): التقاءُ السَّاكنَينِ</span><span class="soon-badge">⏳ قريبًا</span></div>
-        <div class="item audio"><span class="text">استماع الدرس (19): مُلاحظاتٌ حولَ قراءةِ حَفْصٍ</span><span class="soon-badge">⏳ قريبًا</span></div>
-        <div class="item audio"><span class="text">استماع الدرس (20): القُرَّاءُ العشرةُ ورواتُهم</span><span class="soon-badge">⏳ قريبًا</span></div>
-        <div class="item audio"><span class="text">استماع الدرس (21): الهمزةُ الأوَّليَّةُ (الوَصْلُ، والقَطْعُ)</span><span class="soon-badge">⏳ قريبًا</span></div>
-        <div class="item audio"><span class="text">استماع الدرس (22): الرَّسمُ العُثمانيُّ للمُصحَفِ الشَّريفِ</span><span class="soon-badge">⏳ قريبًا</span></div>
-        <div class="item audio"><span class="text">استماع الدرس (23): فَوائدُ تجويديَّةٌ</span><span class="soon-badge">⏳ قريبًا</span></div>
-        <div class="item audio"><span class="text">استماع الدرس (24): لَطائفُ قُرآنيَّةٌ</span><span class="soon-badge">⏳ قريبًا</span></div>
-        <div class="item audio"><span class="text">استماع الدرس (25): ثَمَراتٌ مُتَّصِلةٌ</span><span class="soon-badge">⏳ قريبًا</span></div>
-
+        
+        <!-- زر تحميل كامل للصوتيات -->
+        <a href="#" class="download-btn full-download">🎧 تحميل جميع الصوتيات كملف واحد</a>
     </div>
 
     <!-- حقوق النشر -->
