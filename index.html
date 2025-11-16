@@ -77,9 +77,20 @@
             background: #e0e7ff; /* أزرق فاتح */
         }
 
-        .item span.text {
+        .item span.text,
+        .item a.text {
             flex: 1;
             margin-left: 8px;
+        }
+
+        /* الروابط داخل العناصر بنفس لون النص بدون خط */
+        .items-wrapper a.text {
+            color: inherit;
+            text-decoration: none;
+        }
+
+        .items-wrapper a.text:hover {
+            text-decoration: underline;
         }
 
         .soon-badge {
@@ -114,21 +125,15 @@
     <!-- صورة الغلاف -->
     <img src="cover.jpg" class="cover" alt="غلاف الكتاب">
 
-    <!-- ✅ الإضافات الثلاثة المطلوبة (قبل الملفات المرئية) -->
+    <!-- ✅ يبقى هنا فقط زر تحميل الكتاب PDF -->
     <div class="items-wrapper" style="margin-bottom: 20px;">
         <div class="item">
-            <span class="text">📄 تحميل الكتاب كاملًا (PDF)</span>
-            <span class="soon-badge">⏳ قريبًا</span>
-        </div>
-        <div class="item">
-            <span class="soon-badge">⏳ قريبًا</span>
-        </div>
-        <div class="item">
+            <a href="book.pdf" class="text" download>📄 تحميل الكتاب كاملًا (PDF)</a>
             <span class="soon-badge">⏳ قريبًا</span>
         </div>
     </div>
-    <!-- نهاية الإضافات -->
-        <!-- قسم تحميل الكتاب PDF -->
+
+    <!-- قسم تحميل الكتاب PDF (كما هو) -->
     <div class="section">
         <div class="section-title">📚 تحميل الكتاب (PDF)</div>
         <ul>
@@ -144,9 +149,14 @@
     <div class="section-title">📘 المحتوى المرئي (الفيديوهات)</div>
     <div class="items-wrapper">
 
+        <!-- 🔽 زر تحميل جميع الفيديوهات كملف واحد قبل المقدّمة -->
+        <div class="item">
+            <a href="videos-all.zip" class="text" download>🎬 تحميل جميع الفيديوهات كملف واحد</a>
+            <span class="soon-badge">⏳ قريبًا</span>
+        </div>
+
         <!-- سطر مستقل: المقدّمة -->
         <div class="item">
-                        <span class="text">🎬 تحميل جميع الفيديوهات كملف واحد</span>
             <span class="text">المقدّمة</span>
             <span class="soon-badge">⏳ قريبًا</span>
         </div>
@@ -183,7 +193,12 @@
     <!-- المحتوى الصوتي -->
     <div class="section-title">🎧 المحتوى الصوتي (التسجيلات)</div>
     <div class="items-wrapper">
-                    <span class="text">🎧 تحميل جميع الصوتيات كملف واحد</span>
+
+        <!-- 🔽 زر تحميل جميع الصوتيات كملف واحد قبل المقدّمة -->
+        <div class="item audio">
+            <a href="audios-all.zip" class="text" download>🎧 تحميل جميع الصوتيات كملف واحد</a>
+            <span class="soon-badge">⏳ قريبًا</span>
+        </div>
 
         <div class="item audio"><span class="text">المقدّمة</span><span class="soon-badge">⏳ قريبًا</span></div>
 
